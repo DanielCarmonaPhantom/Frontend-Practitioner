@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>This is a test</title>
 </head>
 <body>
@@ -24,5 +25,18 @@
         <br />
     <button>Enviar</button>
     </form>
+
+    <form>
+        <label>Nombre</label>
+        <input id="formNombre" type="text" required placeholder="Nombre" />
+        <br />
+            <label>Email</label>
+            <input id="formEmail" type="email" placeholder="email" class="green" />
+            <br />
+            <label>Edad</label>
+            <input id="formAge" min="18" max="99" type="number"/>
+
+        <button>Enviar</button>
+        </form>
 </body>
 </html>
