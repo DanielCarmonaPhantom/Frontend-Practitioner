@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <label>Nombre</label>
+        <input id="formNombre" type="text" required placeholder="Nombre" />
+        <br />
+        <label>Email</label>
+        <input id="formEmail" type="email" placeholder="email"/>
+        <br />
+        <label>Edad</label>
+        <input id="formAge" min="18" max="99" placeholder="0" type="number"/>		
+        <br />
+        <button>Enviar</button>
+        <button onclick="storeUserData()">Guardar</button>
+        <button onclick="getUserData()">Recuperar</button>
+      </form>
+
+      <script>
+        function storeUserData() {
+            console.log("storeUserData");
+            event.preventDefault();
+
+            var name = document.getElementById("formNombre");
+            var email = document.getElementById("formEmail");
+            var age = document.getElementById("formAge");
+            var userData = {
+                "name": name.value,
+                "email": email.value,
+                "age": age.value
+            };
+
+            // name.value = ""
+            // email.value = ""
+            // age.value = ""
+
+            alert("Datos guardados satisfactoriamente")
+
+            localStorage.setItem("userDataJSON", JSON.stringify(userData));
+            
+
+        }
+
+        function getUserData() {
+            console.log("getUserData");
+            event.preventDefault();
+            var userData = JSON.parse(localStorage.getItem("userDataJSON"));
+
+            document.getElementById("formNombre").value = userData.name;
+            document.getElementById("formEmail").value = userData.email;	
+        }
+      </script>
+</body>
+</html>
