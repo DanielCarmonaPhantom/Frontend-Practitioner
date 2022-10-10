@@ -1,0 +1,20 @@
+{
+  "name": "base-litement",
+  "description": "Webcomponent base-litement following open-wc recommendations",
+  "license": "MIT",
+  "author": "base-litement",
+  "version": "0.0.0",
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "web-dev-server"
+  },
+  "dependencies": {
+    "lit": "^2.0.2"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.17",
+    "@web/dev-server": "^0.1.28",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "customElements": "custom-elements.json"
+}
