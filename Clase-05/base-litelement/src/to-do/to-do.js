@@ -1,15 +1,16 @@
 import { LitElement, html, css } from 'lit-element';
+import './to-do-task';
 
 class ToDo extends LitElement {
     static get properties() {
 		return {
 			title: {type:String},
-            tareas: {type:Array}			
+            tareas: {type:Array}
 		};
 	}
     static get styles()
     {
-        return css 
+        return css
             `ul {
                 list-style-type:none;
                 padding: 0px;
@@ -30,10 +31,10 @@ class ToDo extends LitElement {
     constructor() {
 		// Always calls super() first.
 		super();
-	
+
         this.title = ""
-		this.tareas = []; //[{'texto': 'Pasear el perro', 'prioridad': 1}]		
-		
+		this.tareas = []; //[{'texto': 'Pasear el perro', 'prioridad': 1}]
+
 	}
     render(){
         console.log(this.tareas);
@@ -45,13 +46,13 @@ class ToDo extends LitElement {
                         return t1.prioridad-t2.prioridad;
                     }).map(
                         function (tarea) {
-                            return html `<li>${tarea.texto} -- ${tarea.prioridad}</li>`;
-                        }                    
+                            return html `<to-do-task id="${tarea.id}" tarea ="${tarea.texto}" prioridad = "${tarea.prioridad}" '></to-do-task>`;
+                        }
                     )}
                 </ul>
             </div>
         `
-    }    
+    }
 }
 
 customElements.define('to-do', ToDo)

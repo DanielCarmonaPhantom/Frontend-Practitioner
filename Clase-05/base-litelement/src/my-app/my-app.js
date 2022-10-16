@@ -4,10 +4,10 @@ import './main-app.js';
 import './footer-app';
 
 class MyApp extends LitElement {
-  
+
 render (){
-    return html 
- `<header-app></header-app>
+    return html
+    `<header-app></header-app>
     <main-app></main-app>
     <footer-app></footer-app>
     `;

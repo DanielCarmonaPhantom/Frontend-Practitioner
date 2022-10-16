@@ -17,6 +17,10 @@ class ToDoTask extends LitElement{
                 line-height: 30px;
                 border-bottom: 1px solid #ccc;
             }
+            li :hover{
+                background-color: #999;
+                color: #ccc;
+          }
         `;
     }
     constructor(){
@@ -29,8 +33,9 @@ class ToDoTask extends LitElement{
     render(){
         return html `
             <li>
-                ${this.id} - ${this.area} } - ${this.prioridad}
+                ${this.id} - ${this.tarea}  - ${this.prioridad}
             </li>
         `;
     }
 }
+customElements.define('to-do-task', ToDoTask)

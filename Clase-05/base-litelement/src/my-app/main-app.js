@@ -7,11 +7,11 @@ class MainApp extends LitElement {
 
         return {
 
-        };    
+        };
     }
-    
+
     static get styles(){
-        return css 
+        return css
             `div {
                 text-align:center;
             }
@@ -25,11 +25,11 @@ class MainApp extends LitElement {
         return html `<div class='main'>
                 <to-do title='Lista de tareas' tareas = '
                 [
-                    {"texto": "Pasear el perro", "prioridad":2}, 
-                    {"texto": "Lavar el auto", "prioridad":1},            
-                    {"texto": "Pintar la casa", "prioridad":1}
+                    {"id": 1 ,"texto": "Pasear el perro", "prioridad":2},
+                    {"id": 2 ,"texto": "Lavar el auto", "prioridad":1},
+                    {"id": 3 ,"texto": "Pintar la casa", "prioridad":1}
                 ]
-                '></to-do>            
+                '></to-do>
             </div>
         `;
     }
