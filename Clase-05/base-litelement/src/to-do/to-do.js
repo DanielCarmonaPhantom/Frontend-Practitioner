@@ -45,7 +45,7 @@ class ToDo extends LitElement {
                         return t1.prioridad-t2.prioridad;
                     }).map(
                         function (tarea) {
-                            return html `<li>${tarea.texto} - ${tarea.prioridad}</li>`;
+                            return html `<li>${tarea.texto} -- ${tarea.prioridad}</li>`;
                         }                    
                     )}
                 </ul>

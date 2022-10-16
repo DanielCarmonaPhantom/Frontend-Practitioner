@@ -26,8 +26,8 @@ class MainApp extends LitElement {
                 <to-do title='Lista de tareas' tareas = '
                 [
                     {"texto": "Pasear el perro", "prioridad":2}, 
-                    {"texto": "Lavar el auto", "prioridad":1}            
-                    
+                    {"texto": "Lavar el auto", "prioridad":1},            
+                    {"texto": "Pintar la casa", "prioridad":1}
                 ]
                 '></to-do>            
             </div>
