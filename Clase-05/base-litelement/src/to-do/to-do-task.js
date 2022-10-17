@@ -33,9 +33,17 @@ class ToDoTask extends LitElement{
     render(){
         return html `
             <li>
-                ${this.id} - ${this.tarea}  - ${this.prioridad}
+            ${this.id} - ${this.tarea}  - ${this.prioridad} <input type ="button" value='X' @click="${this.removerTarea}"  />
             </li>
         `;
+    }
+    removerTarea(){
+        this.dispatchEvent(new CustomEvent('Remover tarea' ,{
+            detail:{
+                'id': this.id
+                }
+            }
+        ));
     }
 }
 customElements.define('to-do-task', ToDoTask)
