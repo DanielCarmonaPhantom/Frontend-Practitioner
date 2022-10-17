@@ -38,7 +38,8 @@ class ToDoTask extends LitElement{
         `;
     }
     removerTarea(){
-        this.dispatchEvent(new CustomEvent('Remover tarea' ,{
+        console.log("Se remueve la tarea")
+        this.dispatchEvent(new CustomEvent('remover-tarea' ,{
             detail:{
                 'id': this.id
                 }

@@ -62,6 +62,7 @@ class ToDo extends LitElement {
         this.tareas = [... this.tareas, tareas]
     }
     eliminar(e){
+        console.log("Se elimina la tarea");
         this.tareas = this.tareas.filter(function(tarea){
             return tarea.id!= e.detail.id; // Va a devolver todas las tareas donde el iud sea diferente al id que se paso
         })
