@@ -7,3 +7,7 @@
 3. Clase 3 - Instalación de Node.Js
 4. Clase 4 - Creando componentes
 5. Clase 5 - Iterando Arrays
+6. Clase 6 - 
+7. Clase 7 - Crud de personal
+
+## Clase 1 - Introducción a HTMl y CSS
