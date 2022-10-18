@@ -32,50 +32,50 @@ class ToDo extends LitElement {
         super();
         this.title="";
         this.tareas=[]; // [{"texto":"PASEAR PERRO", "PRIORIDAD":1}];
-
-        sandbox.on('remover-tarea', this.eliminar.bind(this));
         sandbox.on('agregar-tarea', this.agregar.bind(this));
+        sandbox.on('remover-tarea', this.eliminar.bind(this));
+        
     }
     render (){
         return html `    
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-            <div>
-                <h3>${this.title}</h3>
-                <to-do-input @agregar-tarea="${this.agregar}"></to-do-input>
-                <ul>
-                ${this.tareas.sort(function(t1,t2)
-                    {
-                        return t1.prioridad - t2.prioridad;
-                    }).map(
-                        function(tarea){
-                            return html `
-                            <to-do-task
-                            id="${tarea.id}"-- texto ="${tarea.texto}"-- prioridad="${tarea.prioridad}" @remover-texto="${this.eliminar}">
-                            </to-do-task>
-                            `;
-                        }.bind(this)
+            <div class='container'>
+                
+                    <h3>${this.title}</h3>
 
-                    )}
-                </ul>
+                    <to-do-input @agregar-tarea="${this.agregar}"></to-do-input>
+                    <div class='row mt-5'>
+                        ${this.tareas.map(
+                                function(tarea){
+                                    return html `
+                                    <div class='col-3'>
+                                        <to-do-task
+                                        id="${tarea.id}"-- texto ="${tarea.texto}"-- prioridad="${tarea.prioridad}" @remover-texto="${this.eliminar}">
+                                        </to-do-task>
+                                    </div>
+                                    `;
+                                }.bind(this)
+                            )}                        
+                    </div>
             </div>
         `;
     }
 
     agregar(e){
-        this.id = this.getId();
-        console.log(e.detail);
-        var tarea={"id": this.id , "texto": e.detail.texto, "prioridad": e.detail.prioridad};
-        this.tareas=[...this.tareas,tarea] ;
+        console.log(e.detail)
+
+        let tarea = {'id': this.getId(), 'texto': e.detail.texto, 'prioridad': e.detail.prioridad}
+        this.tareas=[...this.tareas, tarea] ;
     }
 
-    eliminar(e){
+    eliminar(e){        
         this.tareas=this.tareas.filter(function (tarea){
-            return tarea.id!=e.detail.id;
-        });
+            return tarea.id!=e.id;
+    });
         
         //console.log(e.detail);
     }
-    update(){
+    updated(){
         this.dispatchCount();
     }
     getId(){
