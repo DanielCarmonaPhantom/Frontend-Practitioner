@@ -4,12 +4,11 @@ import sandbox from '../sandbox/sandbox';
 class ToDoInput extends LitElement {    
 	
 	
-	static get styles()
-        {
+	static get styles(){
                 return css `
 
-                         .break{
-				height:20px;
+					.break{
+					height:20px;
                          }
                 `;
         }
@@ -31,7 +30,7 @@ class ToDoInput extends LitElement {
 		<form>
 			<div class='form-row'>
 			<div class="col-7">
-				<input type="text" class="form-control"  value="${this.tarea}" @input="${this.updateTarea}" placeholder="Ingrese una tarea"/>
+				<input type="text" class="form-control"  value="${this.tarea}" @input="${this.updateTarea}" placeholder="Ingrese un pastel"/>
 			</div>	
 			
 			<div class="col">

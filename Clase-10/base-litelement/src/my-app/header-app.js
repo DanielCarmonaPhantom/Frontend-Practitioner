@@ -9,8 +9,7 @@ export class HeaderApp extends LitElement {
                 };
         }
 
-	static get styles()
-	{
+	static get styles(){
 		return css `
 			.count
 			{
@@ -20,15 +19,13 @@ export class HeaderApp extends LitElement {
 		`;
 	}
 
-	constructor()
-	{
+	constructor(){
 		super();
 		this.total=0;
 		sandbox.on('count-tarea',this.setTotal.bind(this));
 	}
 
-	setTotal(e)
-	{
+	setTotal(e){
 		this.total=e.count;
 	}
 
@@ -38,8 +35,8 @@ export class HeaderApp extends LitElement {
 			<nav class="navbar navbar-inverse fixed-top bg-dark">
 			  <div class="container-fluid">
 			    <div class="navbar-header">
-			      <a class="navbar-brand" href="">To Do APP</a>
-			      <span class='count'>${this.total} tareas restantes</span>  	
+			      <a class="navbar-brand" href="">Pasteleria</a>
+			      <span class='count'>${this.total} pasteles</span>  	
 			    </div>
   			</div>
 			</nav>

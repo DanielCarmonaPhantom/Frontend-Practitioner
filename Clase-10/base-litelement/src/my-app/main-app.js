@@ -25,10 +25,7 @@ class MainApp extends LitElement {
 		return html`
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 			<div class='container'>
-				<to-do title='Lista de tareas' 
-				tareas='[{"id":123456,"texto":"Tarea 1","prioridad":3},
-					 {"id":125674,"texto":"Tarea 2","prioridad":2},
-					 {"id":126789,"texto":"Tarea 3","prioridad":1}]'></to-do>
+				<to-do title='Pasteles'></to-do>
 			</div>
 		`;
 	}

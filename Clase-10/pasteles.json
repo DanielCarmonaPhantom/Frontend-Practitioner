@@ -1,9 +1,9 @@
 {
-    "pasteles": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "users": [
-        
-    ]
-    
-  }
+  "pasteles": [
+    {"id":123456,"texto":"Tarea 1","prioridad":3},
+    {"id":125674,"texto":"Tarea 2","prioridad":2},
+    {"id":126789,"texto":"Tarea 3","prioridad":1}
+] 
+}
+
+ 
