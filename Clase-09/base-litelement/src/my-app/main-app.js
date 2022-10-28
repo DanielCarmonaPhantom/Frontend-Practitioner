@@ -23,7 +23,8 @@ class MainApp extends LitElement {
 		return html`
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 			<div class='container main'>
-				<to-do title="Lista de tareas">
+				<to-do title="Lista de tareas" src='http://localhost:3000/tareas/'>
+
 				</to-do>
 			</div>
 

@@ -9,8 +9,11 @@
     "start": "web-dev-server"
   },
   "dependencies": {
-    "json-server": "^0.17.0",
-    "lit": "^2.0.2"
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "bootstrap-icons": "^1.9.1",
+    "lit": "^2.0.2",
+    "lit-element-router": "^2.0.3"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.17",

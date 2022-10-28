@@ -9,7 +9,8 @@ class ToDo extends LitElement {
 	static get properties() {		
 		return {
 			title:{type:String},			
-			tareas:{type:Array}
+			tareas:{type:Array},
+			src:{type:String}
 		};
 	}	
 	constructor() {
@@ -19,7 +20,7 @@ class ToDo extends LitElement {
 		this.title="";
 		this.tareas=[];
 
-		this.src = 'http://localhost:3000/tareas/'
+		this.src = '';
 
 		sandbox.on('remover-tarea',this.elimTarea.bind(this)); 
 		sandbox.on('agregar-tarea',this.postTarea.bind(this));    
@@ -56,7 +57,9 @@ class ToDo extends LitElement {
 	}
 	updated(changeProperties){
 		this.dispatchCount();
+		
 		if (changeProperties.has("src")) {
+
 			this.getTareas();
 		}
 	}

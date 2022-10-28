@@ -7,7 +7,7 @@ export class ToDoTask extends LitElement {
                 return {
 			
 			id:{type: Number},
-                        tarea: {type: String},
+            tarea: {type: String},
 			prioridad: {type: Number}
                 };
         }

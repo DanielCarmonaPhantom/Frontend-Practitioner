@@ -1,0 +1,153 @@
+{
+  "mascotas": [
+    {
+      "id": 1,
+      "name": "Camilo",
+      "type": "Perro",
+      "description": "Este perrito es muy bonito",
+      "age": 5,
+      "status": "adopted",
+      "createdAt": "Postulado el 28/10/2022",
+      "image": {
+        "src": "./img/perro.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Pogo",
+      "type": "Perro",
+      "description": "Es un perro muy cariñoso",
+      "age": 3,
+      "status": "adopted",
+      "createdAt": "Postulado el 28/10/2022",
+      "image": {
+        "src": "./img/perro.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Mina",
+      "type": "Gato",
+      "description": "Una gatita muy astuta",
+      "age": 9,
+      "status": "postulate",
+      "createdAt": "Postulado el 28/10/2022",
+      "image": {
+        "src": "./img/perro.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Lila",
+      "type": "Gatita",
+      "description": "Una gatita muy astuta",
+      "age": 3,
+      "status": "postulate",
+      "createdAt": "Postulado el 28/10/2022",
+      "image": {
+        "src": "./img/perro.jpg"
+      }
+    },
+    {
+      "name": "Pascual",
+      "description": "Un perrito bonito",
+      "age": "2",
+      "type": "Chuahua",
+      "status": "postulate",
+      "createdAt": "Postulado el 28/10/2022",
+      "image": {
+        "src": "./img/perro.jpg"
+      },
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Rafa",
+      "lastName": "Zambrano",
+      "email": "rafa@example.org",
+      "password": "123",
+      "addres": "dirección 2",
+      "city": "ciudad 2",
+      "house": "motivos 2",
+      "housechecket": false,
+      "pets": false,
+      "photos": false,
+      "adopciones": [
+        1,
+        2
+      ],
+      "postulaciones": [
+        3
+      ]
+    },
+    {
+      "name": "Juan",
+      "lastName": "Ramirez",
+      "email": "ramirez@example.org",
+      "password": "123",
+      "addres": "direccion 2",
+      "city": "ciudad 2",
+      "house": "por que si",
+      "housechecket": false,
+      "pets": false,
+      "photos": false,
+      "id": 2,
+      "adopciones": [],
+      "postulaciones": [
+        1,
+        7
+      ]
+    },
+    {
+      "name": "uriel",
+      "lastName": "guzman",
+      "email": "guzman@xmaple.org",
+      "password": "123",
+      "addres": "direccion 4 ",
+      "city": "ciudad 4",
+      "house": "por que shi",
+      "housechecket": false,
+      "pets": false,
+      "photos": false,
+      "adopciones": [],
+      "postulaciones": [
+        2
+      ],
+      "id": 3
+    },
+    {
+      "name": "Chuy",
+      "lastName": "Chuy",
+      "email": "chuy@example.org",
+      "password": "123",
+      "addres": "direcion 3",
+      "city": "ciuad 4",
+      "house": "por que si",
+      "housechecket": false,
+      "pets": false,
+      "photos": false,
+      "adopciones": [],
+      "postulaciones": [],
+      "id": 4
+    },
+    {
+      "name": "Chuy",
+      "lastName": "chuy",
+      "email": "chuy@example.org",
+      "password": "123",
+      "addres": "dic 3",
+      "city": "ci 4",
+      "house": "Por me gusta los animalitas",
+      "housechecket": false,
+      "pets": false,
+      "photos": false,
+      "adopciones": [],
+      "postulaciones": [
+        5
+      ],
+      "id": 5
+    }
+  ]
+}

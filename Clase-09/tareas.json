@@ -1,19 +1,19 @@
 {
   "tareas": [
     {
-      "texto": "ESTA ES LA 2DA TAREA",
-      "prioridad": 2,
-      "id": "123"
+      "id": 1,
+      "texto": "Tarea1",
+      "prioridad" : 3
     },
     {
-      "texto": "ESTA ES LA 1ra TAREA",
-      "prioridad": 1,
-      "id": "345"
+      "id": 2,
+      "texto": "Tarea2",
+      "prioridad" : 3
     },
     {
-      "texto": "pruebas",
-      "prioridad": 1,
-      "id": "Z3-Xaqh"
+      "id": 3,
+      "texto": "Tarea3",
+      "prioridad" : 3
     }
   ]
 }
