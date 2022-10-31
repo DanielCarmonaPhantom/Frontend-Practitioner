@@ -29,11 +29,11 @@
       "name": "Mina",
       "type": "Gato",
       "description": "Una gatita muy astuta",
-      "age": 9,
+      "age": 1,
       "status": "postulate",
       "createdAt": "Postulado el 28/10/2022",
       "image": {
-        "src": "./img/perro.jpg"
+        "src": "./img/pet3.jpg"
       }
     },
     {
@@ -41,22 +41,22 @@
       "name": "Lila",
       "type": "Gatita",
       "description": "Una gatita muy astuta",
-      "age": 3,
+      "age": 1,
       "status": "postulate",
       "createdAt": "Postulado el 28/10/2022",
       "image": {
-        "src": "./img/perro.jpg"
+        "src": "./img/pet4.jpg"
       }
     },
     {
       "name": "Pascual",
       "description": "Un perrito bonito",
       "age": "2",
-      "type": "Chuahua",
+      "type": "Chihuahua",
       "status": "postulate",
       "createdAt": "Postulado el 28/10/2022",
       "image": {
-        "src": "./img/perro.jpg"
+        "src": "./img/pet1.jpg"
       },
       "id": 5
     }
