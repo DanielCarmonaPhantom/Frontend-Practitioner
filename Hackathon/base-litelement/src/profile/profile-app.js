@@ -77,7 +77,7 @@ class ProfileApp extends LitElement {
                 <div class="row">
                     <div class='col-12 mt-3'>
                     <h2>Postulaciones</h2>
-                        <ul class='mt-4'>
+x                        <ul class='mt-4'>
                         ${this.postulaciones.map(function (mascota) {
                             return html `                            
                                 <mascota-card-postulation id="${mascota.id}" name="${mascota.name}" urlImg='${mascota.image.src}' age='${mascota.age}' description='${mascota.description}' createdAt='${mascota.createdAt}'></mascota-card-postulation>
